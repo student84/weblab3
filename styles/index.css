@@ -1,0 +1,87 @@
+
+body {
+    font-family: "Arial Narrow", sans-serif;
+    font-size: 1.2em;
+    background-color: aliceblue;
+    display: grid;
+}
+
+.basic-info {
+    margin-top: 1em;
+}
+
+#avatar {
+    height: 500px;
+    width: 400px;
+    cursor: wait;
+}
+
+#avatar:hover {
+    animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+::selection {
+    color: deeppink;
+}
+
+tr {
+    background-color: #568bed;
+}
+
+tr:nth-child(even) {
+    background-color: #e4e92d;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+nav {
+    margin: auto;
+    text-align: center;
+}
+
+nav > a {
+    padding-left: 1em;
+}
+
+h1, h2, h3, h4 {
+    voice-family: male;
+    richness: 80;
+}
+
+@page {
+    size: auto;
+    margin: 10%;
+}
+
+@media screen and (max-width: 960px){
+    body {
+        background-color: crimson;
+    }
+}
+
+#about_me {
+    cursor: pointer;
+}
+
+#alert_button {
+    margin-top: 10px;
+    width: 400px;
+    height: 50px;
+    background-color: bisque;
+}
